@@ -59,7 +59,12 @@
             <div class="container-fluid fuckingNavbarContainer">
                 <!-- <a class="navbar-brand" vhref="#">Brand</a> -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar">
+                      </span><span class="icon-bar">
+                      </span>
                     </button>
                 </div>
                 <div class="collapse navbar-collapse navbar-menubuilder">
@@ -87,12 +92,73 @@
       <!-- main page content -->
       <div class="divMainContentBody">
         <!-- page contents starts here -->
-        <div class="divCarouselContainer">
-
-        </div>
+            <!-- slide show stats here -->
+                <div id="dps_carousel" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#dps_carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#dps_carousel" data-slide-to="1"></li>
+                    <li data-target="#dps_carousel" data-slide-to="2"></li>
+                    <li data-target="#dps_carousel" data-slide-to="3"></li>
+                    <li data-target="#dps_carousel" data-slide-to="4"></li>
+                  </ol>
+                  <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/slideshow/nat001.jpg" alt="...">
+                        </div>
+                        <div class="item">
+                          <img src="img/slideshow/nat002.jpg" alt="...">
+                        </div>
+                        <div class="item">
+                          <img src="img/slideshow/nat003.jpg" alt="...">
+                        </div>
+                        <div class="item">
+                          <img src="img/slideshow/nat004.jpg" alt="...">
+                        </div>
+                        <div class="item">
+                          <img src="img/slideshow/nat005.jpg" alt="...">
+                        </div>
+                      </div>
+                </div>
+            <!-- end of slide show -->
+            <!-- content for home page -->
+                <div class="container-fluid" style="margin-top:5px;color:#000;text-align:center;">
+                  <div class="row">
+                    <div class="divMsgPrincipal col-xs-12 col-md-8">
+                      <h3>Message from the Principal</h3>
+                      <hr class="hrForBox1"/>
+                    </div>
+                    <div class="divRecentEvents col-xs-12 col-md-4">
+                      <h3 style="font-size:23px;line-height:26px;">UPCOMING EVENTS</h3>
+                      <hr class="hrForBox2"/>
+                    </div>
+                  </div>
+                </div>
+            <!-- end content for home page -->
         <!-- end of page contents -->
       </div>
       <!-- end main page content -->
+      <!-- start of footer -->
+      <div class="divMainFooter">
+        <div class="container">
+          <div class="row">
+              <div class="col-xs-12 col-md-8">
+                <h3><u>CONTACT US</u></h3>
+                <ul class="ulForFooter">
+                <li>Address: P.O. Box 25801, ME09 Mohamed Bin Zayed City, Abu Dhabi, UAE</li>
+                <li>Phone: 0097126108400 / 0097126108401</li>
+                <li>Fax: 0097125599883</li>
+                <li>Email: administration@dhafraschools.com</li>
+                <li>Website: http://abu-dhabi.dhafraschools.com</li>
+                </ul>
+              </div>
+              <div class="col-xs-12 col-md-4">
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of footer -->
     </div>
     <!-- end body div -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
