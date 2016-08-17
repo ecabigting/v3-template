@@ -19,8 +19,8 @@
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" type="text/css" href="css/dps_reset.css">
-        <link rel="stylesheet" type="text/css" href="css/dps_style.css">
         <link rel="stylesheet" type="text/css" href="css/fonts-custom.css">
+        <link rel="stylesheet" type="text/css" href="css/dps_style.css">
         <!-- <?php echo $title . ' - ';?> -->
         <title>Al Dhafra Private Schools - Abu Dhabi</title>
   </HEAD>
@@ -71,18 +71,74 @@
                     <ul class="nav navbar-nav">
                         <li><a href="/"><span class="glyphicon glyphicon-home" style="font-size:15px;"></span></a>
                         </li>
-                        <li><a href="/products">Admision</a>
-                        </li>
-                        <li><a href="/about-us">Activities</a>
-                        </li>
-                        <li><a href="/contact">Downloads</a>
-                        </li>
-                        <li><a href="/contact">School</a>
-                        </li>
-                        <li><a href="/contact">Parent</a>
-                        </li>
-                        <li><a href="/contact">SEN</a>
-                        </li>
+                        <li><a class="dropdown-toggle" data-toggle="dropdown">ADMISSION</a>
+                          <ul class="dropdown-menu" role="menu">
+                              <li><?php echo anchor('http://adsict.ethdigitalcampus.com/DCWeb/form/jsp_aaa/olAdmission_Bahrain.jsp?dbConnVar=ADS&portalFlag=adm', 'Online Admission') ?></li>
+                              <li><?php echo anchor('admission/required-documents', 'Required Documents') ?></li>
+                              <li><?php echo anchor('admission/tuition-fee', 'Tuition Fees') ?></li>
+                              <li><?php echo anchor('admission/policy', 'Policy') ?></li>
+                          </ul>
+		                    </li>
+						<li><a class="dropdown-toggle" data-toggle="dropdown">ACTIVITIES</a>
+                          <ul class="dropdown-menu" role="menu">
+                              <li><?php echo anchor('activities/Handwriting-Competition-Teachers', 'Handwriting Competition(Teachers)') ?></li>
+                              <li><?php echo anchor('activities/Handwriting-Competition-Students', 'Handwriting Competition(Students)') ?></li>
+                              <li><?php echo anchor('activities/Math-Club', 'Math Club') ?></li>
+                              <li><?php echo anchor('activities/Robotics-Club', 'Robotics Club') ?></li>
+                              <li><?php echo anchor('activities/Friendly-Football-Tournament', 'Friendly Football Tournament') ?></li>
+                              <li><?php echo anchor('http://power-kids.at/?page_id=182', 'Power-Kids By Dr. Eva ©') ?></li>
+                          </ul>
+						</li>
+						<li><a class="dropdown-toggle" data-toggle="dropdown">DOWNLOADS</a>
+                          <ul class="dropdown-menu" role="menu">
+                              <li><?php echo anchor('download/ADSF-2015-AR.pdf', 'Abu Dhabi Science Festival Info(Arabic)') ?></li>
+                              <li><?php echo anchor('download/ADSF-2015-EN.pdf', 'Abu Dhabi Science Festival Info(English)') ?></li>
+                              <li><?php echo anchor('download/RegistrationForm.pdf', 'Registration Form') ?></li>
+                              <li><?php echo anchor('download/MedicalForm.pdf', 'Registration Medical Form') ?></li>
+                              <li><?php echo anchor('download/winvarjac14-15.pdf', 'Winter Varcity Jacket') ?></li>
+                              <li><?php echo anchor('download/BookList.pdf', 'Book List 2013 - 2014') ?></li>
+                              <li><?php echo anchor('download/SchoolCalendar2015-2016.jpg', 'School Calendar 2015 - 2016') ?></li>
+                              <li><?php echo anchor('download/SchoolCalendar2016-2017.jpg', 'School Calendar 2016 - 2017') ?></li>
+                              <li><?php echo anchor('download/ParentPortalGuide.pdf', 'Parent Portal Guide') ?></li>
+                              <li><?php echo anchor('download/ParentPortalVideo.mp4', 'Parent Portal Video') ?></li>
+                              <li><?php echo anchor('download/ParentPortalWeeklyPlanGuide.pdf', 'Parent Portal Weekly Plan Guide') ?></li>
+                              <li><?php echo anchor('download/ParentPortalReportCardGuide.pdf', 'Parent Portal Report Card Guide') ?></li>
+							  <li><?php echo anchor('download/Consent-Form-Measles-Campaign-Student.docx', 'Consent Form Measles Campaing Students') ?></li>
+                              <li><?php echo anchor('download/CIEExam2015-2016-JUNE.pdf', 'IGCSE, AS & AL CIE Exam Timetable 2015-2016') ?></li>
+                              <li><?php echo anchor('download/CheckpointCIEExam2015-2016-MAY.pdf', '9IG Checkpoint CIE Exam Timetable 2015-2016') ?></li>
+                          </ul>
+						</li>
+						<li><a class="dropdown-toggle" data-toggle="dropdown">SCHOOL</a>
+                          <ul class="dropdown-menu" role="menu">
+							  <li><?php echo anchor('contact-us/', 'CONTACT US') ?></li>
+							  <li><?php echo anchor('school/message-from-the-principal', 'Message from the Principal') ?></li>
+							  <li><?php echo anchor('school/vision-mission-values-beliefs', 'Vision, Mission, Values & Beliefs') ?></li>
+							  <li><?php echo anchor('school/objectives', 'Objectives') ?></li>
+							  <li><?php echo anchor('school/code-of-conduct', 'Code of Conduct') ?></li>
+							  <li><?php echo anchor('school/child-protection-policy-en', 'Child Protection Policy(ENGLISH)') ?></li>
+							  <li><?php echo anchor('school/child-protection-policy-ar', 'Child Protection Policy(ARABIC)') ?></li>
+							  <li><?php echo anchor('school/tardy-policy-and-procedures', 'Tardy Policy and Procedures') ?></li>
+							  <li><?php echo anchor('school/dress-code-policy', 'Dress Code Policy') ?></li>
+							  <li><?php echo anchor('school/curriculum', 'Curriculum') ?></li>
+							  <li><?php echo anchor('school/schedule', 'School Schedule') ?></li>
+							  <li><?php echo anchor('school/gallery', 'Gallery') ?></li>
+							  <li><?php echo anchor('school/assessments-policies', 'Assessments Policies') ?></li>
+                          </ul>
+						</li>
+						<li><a class="dropdown-toggle" data-toggle="dropdown">PARENT</a>
+                          <ul class="dropdown-menu" role="menu">
+                              <li><?php echo anchor('download/ParentPortalGuide.pdf', 'Parent Portal Guide') ?></li>
+                              <li><?php echo anchor('download/ParentHandbookDoc.pdf', 'Hand Book') ?></li>
+                          </ul>
+						</li>
+						<li><a class="dropdown-toggle" data-toggle="dropdown">SEN</a>
+							<ul class="dropdown-menu" role="menu">
+							  <li><?php echo anchor('sen/anti-bullying', 'DPS Anti-Bullying') ?></li>
+							  <li><?php echo anchor('sen/policy-and-procedures', 'Policy and Procedures') ?></li>
+							  <li><?php echo anchor('sen/wall-of-fame', 'Wall of Fame') ?></li>
+							  <li><?php echo anchor('sen/gifted-and-talented-students', 'Gifted and Talented Students') ?></li>
+							</ul>
+						</li>
                     </ul>
                 </div>
             </div>
